@@ -1,9 +1,11 @@
-# ATNS sample TTL files
+# ATNS RDF sample layout
 
-These files are small modelling samples for public, non-deleted ATNS agreement records:
+These files and directories provide small modelling samples for public, non-deleted ATNS agreement records:
 
-- `atns-model.ttl` defines conservative draft classes and properties for sample instance data.
-- `public-agreements.ttl` contains four public agreement examples and a small set of related public entity/reference records.
+- `../model.ttl` defines conservative draft classes and properties for ATNS instance data.
+- `../resources/catalogue.ttl` contains the sample `schema:DataCatalog` and dataset wrapper.
+- `../resources/items/` contains individual resource item files split from the public agreement sample.
+- `public-agreements.ttl` is the aggregate source sample used to derive the split resource files.
 
 ## Modelling notes
 
@@ -14,6 +16,8 @@ Use Schema.org and DCTERMS for stable publication-level meanings such as names, 
 Instance data uses IDN PID-style resource IRIs scoped under `https://data.idnau.org/pid/resource/atns/`. ATNS entity, reference, relationship-row and sample dataset IRIs are currently treated as preserved data resources, using bases such as `https://data.idnau.org/pid/resource/atns/entity/`, `https://data.idnau.org/pid/resource/atns/reference/`, `https://data.idnau.org/pid/resource/atns/entity-relationship/` and `https://data.idnau.org/pid/resource/atns/sample/`. IRI suffixes use deterministic UUIDs, such as `atns-entity:34524ede-2abc-50f1-af30-8493753c928e`, rather than source database identifiers. Do not duplicate these HTTP PID IRIs as `schema:identifier` nodes.
 
 Legacy ATNS identifiers are preserved separately as source-system values. For example, the public EID `A003259` is recorded with `atns:eid "A003259"^^xsd:token`, the source `Entities.EntityID` value `24` is recorded with `atns:sourceEntityId 24`, source `Refs.RefID` values are recorded with `atns:sourceReferenceId`, and source `Entity_Entity.Entity_EntityID` values are recorded with `atns:sourceRelationshipId`. Use `schema:identifier "..."^^xsd:token` only if a later sample needs a non-HTTP catalogue identifier that is not already covered by one of these preservation properties. The `https://data.idnau.org/pid/org/` and `https://data.idnau.org/pid/person/` bases are reserved for later first-class organisation and person identifiers, rather than being used for every legacy ATNS entity row that happens to describe an organisation or person.
+
+The split resource item filenames are convenience locators, not RDF identifiers. Entity files use the source `Entities.EntityID` value, such as `../resources/items/atns-24.ttl`. Reference files use `atns-ref-<sourceReferenceId>.ttl`, and relationship-row files use `atns-rel-<sourceRelationshipId>.ttl`, so the different source ID spaces cannot collide in filenames.
 
 Agreement-like distinctions such as framework agreement, funding agreement, ILUA, treaty, deed of settlement and settlement agreement appear in the source as subcategories. For now the sample models those as `atns:subcategory` links. This avoids prematurely deciding whether they are separate RDF classes, legal-document genres, negotiated-process types, or public-display facets.
 
