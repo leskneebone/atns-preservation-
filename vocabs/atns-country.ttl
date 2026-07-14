@@ -15,6 +15,7 @@ atns-country:244f6961-729f-5b21-8fc9-baff9dd9af7e
     skos:notation "207"^^xsd:token ;
     skos:prefLabel "Australia"@en ;
     skos:topConceptOf cs: ;
+    skos:exactMatch <https://sws.geonames.org/2077456/> ;
 .
 
 atns-country:b8628ea5-996a-5369-a084-37dd1c6d09ac
@@ -37,6 +38,7 @@ atns-country:ee7fca3a-a55e-56f2-a128-a1c47927f576
     skos:notation "209"^^xsd:token ;
     skos:prefLabel "Aotearoa - New Zealand"@en ;
     skos:topConceptOf cs: ;
+    skos:exactMatch <https://sws.geonames.org/2186224/> ;
 .
 
 atns-country:cb19027f-65e9-5e74-82cd-5adec519d7b5
@@ -59,6 +61,7 @@ atns-country:709d65e9-b221-53f9-a7f6-0282c0956e36
     skos:notation "212"^^xsd:token ;
     skos:prefLabel "Canada"@en ;
     skos:topConceptOf cs: ;
+    skos:exactMatch <https://sws.geonames.org/6251999/> ;
 .
 
 atns-country:67b48252-254b-55fb-bc5d-020dd26744b2
@@ -92,6 +95,7 @@ atns-country:fe906fd8-6c25-5be6-a5e6-a94056bb0d3c
     skos:notation "215"^^xsd:token ;
     skos:prefLabel "France"@en ;
     skos:topConceptOf cs: ;
+    skos:exactMatch <https://sws.geonames.org/3017382/> ;
 .
 
 atns-country:bfb5901a-e549-5e62-81e3-5f306cc50d6b
@@ -103,6 +107,7 @@ atns-country:bfb5901a-e549-5e62-81e3-5f306cc50d6b
     skos:notation "216"^^xsd:token ;
     skos:prefLabel "Japan"@en ;
     skos:topConceptOf cs: ;
+    skos:exactMatch <https://sws.geonames.org/1861060/> ;
 .
 
 atns-country:9ef3b387-d391-54d4-bcb6-b34a6f85b4da
@@ -114,6 +119,7 @@ atns-country:9ef3b387-d391-54d4-bcb6-b34a6f85b4da
     skos:notation "217"^^xsd:token ;
     skos:prefLabel "Switzerland"@en ;
     skos:topConceptOf cs: ;
+    skos:exactMatch <https://sws.geonames.org/2658434/> ;
 .
 
 atns-country:6957258f-6975-516c-b1f7-fc30050429da
@@ -125,6 +131,7 @@ atns-country:6957258f-6975-516c-b1f7-fc30050429da
     skos:notation "218"^^xsd:token ;
     skos:prefLabel "Timor-Leste"@en ;
     skos:topConceptOf cs: ;
+    skos:exactMatch <https://sws.geonames.org/1966436/> ;
 .
 
 atns-country:101384c4-6f80-5231-a8b1-039adf93ed89
@@ -136,6 +143,7 @@ atns-country:101384c4-6f80-5231-a8b1-039adf93ed89
     skos:notation "219"^^xsd:token ;
     skos:prefLabel "United States of America"@en ;
     skos:topConceptOf cs: ;
+    skos:exactMatch <https://sws.geonames.org/6252001/> ;
 .
 
 atns-country:351648c6-c520-5a35-b1ed-4e7ad85d289e
@@ -147,6 +155,7 @@ atns-country:351648c6-c520-5a35-b1ed-4e7ad85d289e
     skos:notation "276"^^xsd:token ;
     skos:prefLabel "Philippines"@en ;
     skos:topConceptOf cs: ;
+    skos:exactMatch <https://sws.geonames.org/1694008/> ;
 .
 
 atns-country:edd6deab-3687-5d16-82c1-27fe4dd6b9c0
@@ -158,6 +167,7 @@ atns-country:edd6deab-3687-5d16-82c1-27fe4dd6b9c0
     skos:notation "304"^^xsd:token ;
     skos:prefLabel "Republic of South Africa"@en ;
     skos:topConceptOf cs: ;
+    skos:exactMatch <https://sws.geonames.org/953987/> ;
 .
 
 atns-country:bcc3979c-7d86-50dd-8957-9de3f031074b
@@ -169,6 +179,7 @@ atns-country:bcc3979c-7d86-50dd-8957-9de3f031074b
     skos:notation "346"^^xsd:token ;
     skos:prefLabel "Sweden"@en ;
     skos:topConceptOf cs: ;
+    skos:exactMatch <https://sws.geonames.org/2661886/> ;
 .
 
 atns-country:b696949b-f104-5d53-88ae-c8420bf7d73f
@@ -180,11 +191,12 @@ atns-country:b696949b-f104-5d53-88ae-c8420bf7d73f
     skos:notation "356"^^xsd:token ;
     skos:prefLabel "China"@en ;
     skos:topConceptOf cs: ;
+    skos:exactMatch <https://sws.geonames.org/1814991/> ;
 .
 
 <https://orcid.org/0000-0001-5640-3202>
     a schema:Person ;
-    schema:email "mailto:les@kurrawong.ai"^^xsd:anyURI ;
+    schema:email "les@kurrawong.ai"^^xsd:anyURI ;
     schema:name "Les Kneebone" ;
 .
 
@@ -219,7 +231,7 @@ cs:
     skos:prefLabel "ATNS Countries"@en ;
     schema:creator <https://orcid.org/0000-0001-5640-3202> ;
     schema:dateCreated "2026-06-24"^^xsd:date ;
-    schema:dateModified "2026-06-24"^^xsd:date ;
+    schema:dateModified "2026-07-14"^^xsd:date ;
     schema:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
     schema:publisher <https://idn.org.au> ;
     schema:status <https://linked.data.gov.au/def/reg-statuses/experimental> ;
